@@ -2,7 +2,7 @@ Proxy กับ Reverse Proxy
 
 หากพูดถึง **Proxy** คืออะไร ตอบแบบง่ายๆคือ server ที่อยู่ ***ตรงกลางระหว่างผู้ใช้งานและอินเทอร์เน็ต***
 
-users ---- proxy ---- internet (server)
+	users ---- proxy ---- internet (server)
 
 แบ่งได้เป็น
 **Forward Proxy**
