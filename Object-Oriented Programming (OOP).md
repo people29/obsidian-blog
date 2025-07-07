@@ -23,20 +23,21 @@ OOP ทุกสิ่งในโปรแกรมจะถูกมองว�
 
 ``` Javascript
 class Car {
+	#speed; // private field declaration
 	constructor(model) {
 		this.model = model;
-		this.speed = 0;
+		this.#speed = 0;
 	}
 	accelerate(amount) {
-		this.speed += amount;
+		this.#speed += amount;
 	}
 	getCurrentSpeed() {
-		return this.speed;
+		return this.#speed;
 	}
 }
 const car = new Car('Jazz');
 car.accelerate(50);
-// car.speed error // ไม่ควรเข้าถึงโดยตรงแบบนี้
+// car.speed // ไม่ควรเข้าถึงโดยตรงแบบนี้
 console.log(`Current speed: ${car.getCurrentSpeed()} km/h`);
 // Current speed: 50 km/h
 ```
@@ -50,12 +51,13 @@ console.log(`Current speed: ${car.getCurrentSpeed()} km/h`);
 
 ``` Javascript
 class Car {
+	#speed; // private field declaration
 	contructor(model) {
 		this.model = model;
-		this.speed = 0;
+		this.#speed = 0;
 	}
 	accelerate(amount) {
-		this.speed += amount;
+		this.#speed += amount;
 	}
 }
 
